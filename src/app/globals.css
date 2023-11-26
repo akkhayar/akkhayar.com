@@ -27,3 +27,32 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.elongated {
+  height: 10000px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.primary-btn {
+  background-color: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+  border-radius: 100px;
+  width: fit-content;
+  border: 1px solid rgb(var(--foreground-rgb));
+  padding: 0.5rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+h1.title {
+  mix-blend-mode: difference;
+}

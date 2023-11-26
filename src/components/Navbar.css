@@ -1,6 +1,6 @@
 .spotlight-navbar-item {
     background-color: rgb(var(--secondary-rgb));
     border-radius: 100px;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.3rem;
     cursor: pointer;
 }
