@@ -6,7 +6,7 @@ const dm_sans = DM_Sans({ weight: "300", subsets: ['latin'] });
 
 function NavbarItem(props: { text: string }) {
   return (
-    <a href='#' className={dm_sans.className + ' mr-10 uppercase text-2xl'}>{props.text}</a>
+    <a href='#' className={dm_sans.className + ' mr-10 uppercase text-xl'}>{props.text}</a>
   )
 }
 
@@ -18,7 +18,7 @@ export default function Navbar() {
         <NavbarItem text='About' />
         <NavbarItem text='Docs' />
         <NavbarItem text='Operations' />
-        <div className={dm_sans.className + ' text-2xl uppercase spotlight-navbar-item'}>What we are working on</div>
+        <div className={dm_sans.className + ' text-xl uppercase spotlight-navbar-item'}>What we are working on</div>
       </div>
     </nav>
   )
