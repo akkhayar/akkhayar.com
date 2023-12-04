@@ -17,6 +17,10 @@
   }
 }
 
+* {
+  overflow-x: hidden;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -55,4 +59,8 @@ body {
 
 h1.title {
   mix-blend-mode: difference;
+}
+
+.akkhayar-main {
+  overflow-y: hidden;
 }

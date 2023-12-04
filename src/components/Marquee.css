@@ -1,0 +1,39 @@
+/* .circle {
+    background-image: url(https://i.pinimg.com/736x/69/8b/93/698b93db62129b88d3367bace814bd13.jpg);
+    width: 1em;
+    height: auto;
+    overflow: hidden;
+} */
+
+body { margin: 20px; }
+
+.marquee {
+  height: 3em;
+  width: 100vw;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  /* height: 30px; */
+
+  position: absolute;
+  overflow: hidden;
+
+  animation: marquee 10s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}

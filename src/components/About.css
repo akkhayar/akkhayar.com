@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Darker+Grotesque:wght@400;700;800;900&display=swap');
+
+.center-div {
+    width: 85rem;
+    border: solid #BE0000 2px;
+    background-color: #161616;
+}
+
+.border-col {
+    border-color: #BE0000;
+}
+
+.label-name {
+    color: var(--accent, #BE0000);
+    /* text-align: center; */
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.top-left {
+    top: 4px;
+    left: 16rem;
+}
+
+.top-right {
+    top: 4px;
+    right: 16rem;
+}
+
+.bottom-left {
+    bottom: 4px;
+    left: 16rem;
+}
+
+.bottom-right {
+    bottom: 4px;
+    right: 16rem;
+}
+
+.text-wrap {
+    width: 45.6875rem;
+}
+
+.about-text {
+    color: var(--foreground, #EAEAEA);
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-direct {
+    color: var(--foreground, #EAEAEA);
+    text-align: center;
+    font-family: Consolas;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.link-underline {
+    color: var(--accent, #BE0000);
+    font-family: Consolas;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.value-title {
+    color: var(--foreground, #EAEAEA);
+    font-family: Darker Grotesque;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.binary {
+    color: #F00;
+    font-family: Consolas;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
