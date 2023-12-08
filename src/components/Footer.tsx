@@ -10,6 +10,8 @@ export default function Footer() {
         <div className="flex justify-center items-center">
           <p className='teat-center footer-year'>© 2023</p>
         </div>
+        <br /><br /><br />
+        <span className='absolute'>AKKHAYAR SHELL</span>
         <div className="footer-div rounded-xl">
           <div className='rounded-xl first-footer grid grid-cols-12 pt-24'>
             <div className='col-span-6 flex justify-center item-center'>
