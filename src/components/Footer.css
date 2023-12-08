@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz@9..40&family=Darker+Grotesque:wght@400;700;800;900&display=swap');
+
+.footer-div {
+    width: 90rem;
+    height: 30rem;
+    border: solid #eaeaea 2px;
+}
+
+.first-footer {
+    height: 20rem;
+}
+
+.footer-info-div {
+    width: 25rem;
+    height: 10rem;
+    border: solid #eaeaea 2px;
+}
+
+.footer-text {
+    color: var(--foreground, #FFF);
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 6.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-year {
+    color: var(--foreground, #FFF);
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-cmd {
+    color: var(--accent, #BE0000);
+    font-family: DM Mono;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
