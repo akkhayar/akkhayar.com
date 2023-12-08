@@ -7,6 +7,7 @@ import Marquee from '@/components/Marquee';
 import About from '@/components/About';
 
 import { ReactLenis } from '@studio-freight/react-lenis'
+import Handbook from '@/components/Handbook';
 
 const fahkwang = Fahkwang({ weight: "700", subsets: ['latin'] });
 const dm_sans = DM_Sans({ weight: "400", subsets: ['latin'] });
@@ -27,6 +28,7 @@ export default function Home() {
         <div className='flex justify-center'>
         <About />
         </div>
+        <Handbook />
         <Footer />
       </main>
     </ReactLenis>

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz@9..40&family=Darker+Grotesque:wght@400;700;800;900&display=swap');
+
+.grotesque {
+    font-family: 'Darker_Grotesque-Bold',Helvetica;
+}
+
+.dm-sans {
+    font-family: 'DM_Sans-Regular',Helvetica;
+}
+
+.handbook-title {
+    color: #EB0000;
+    font-weight: 600;
+}
+
+.handbook-sub {
+    font-weight: 600;
+}

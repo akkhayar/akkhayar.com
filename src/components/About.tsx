@@ -80,7 +80,7 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center py-24'>
+            <div className='flex justify-center items-center pt-24'>
                 <img src="icon_visual.svg" alt="" />
             </div>
         </div>
