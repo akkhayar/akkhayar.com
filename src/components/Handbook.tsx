@@ -1,7 +1,6 @@
-import React from "react";
 import './Handbook.css'
 
-export default function () {
+export default function Handbook () {
     return (
         <div>
             <div className="w-[100vw] h-[26.25rem]">

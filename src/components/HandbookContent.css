@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Darker+Grotesque:wght@400;700;800;900&display=swap');
+
+.hover-invert:hover {
+    background-color: #BE0000;
+    cursor: crosshair;
+
+}
+
+.menu-content {
+    padding-left: 1.8rem;
+    color: #BE0000;
+    font-family: DM Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu-content:hover {
+    color: #090909;
+}
+
+.border-color {
+    border-color: #BE0000;
+}
