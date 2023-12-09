@@ -8,6 +8,7 @@ import About from '@/components/About';
 
 import { ReactLenis } from '@studio-freight/react-lenis'
 import Handbook from '@/components/Handbook';
+import HandbookContent from '@/components/HandbookContent';
 
 const fahkwang = Fahkwang({ weight: "700", subsets: ['latin'] });
 const dm_sans = DM_Sans({ weight: "400", subsets: ['latin'] });
@@ -29,6 +30,7 @@ export default function Home() {
         <About />
         </div>
         <Handbook />
+        <HandbookContent/>
         <Footer />
       </main>
     </ReactLenis>

@@ -7,6 +7,7 @@ export default function About() {
             <div className="center-div rounded-xl">
                 <div className="grid grid-cols-12">
                     <div className="border-col border-r-2 border-b-2 p-4 col-span-4">
+                        <div className='noise-bg'></div>
                         <p className="label-name text-center">01 // OUR -- STORY</p>
                     </div>
                     <div className="border-col border-r-2 border-b-2 p-4  col-span-7">
@@ -21,21 +22,28 @@ export default function About() {
                     <div className="dot bottom-left"></div>
                     <div className="dot bottom-right"></div>
                     <div className='text-wrap flex-justify-center items-center'>
-                        <p className="text-center about-text">Our journey began with a vision to [Mission/Purpose]. Founded [Year],
+                        <p className="text-center about-text text-glitch">Our journey began with a vision to [Mission/Purpose]. Founded [Year],
                             our story is one of passion, dedication, and a commitment to [Values/Goals].</p>
                         <br /><br />
-                        <p className="text-center about-text">What started as [Origin Story/Inspiration] has grown into a
+                        <p className="text-center about-text text-glitch">What started as [Origin Story/Inspiration] has grown into a
                             thriving community that [Achievement/Impact]. As we continue to evolve, our mission remains steadfast: [Organization's Commitment].</p>
                     </div>
                 </div>
                 <div className='flex justify-center items-center pb-10'>
-                    <p className='about-direct'>[ GET TO KNOW US <a href=""><span className='link-underline'>MORE</span></a> ]</p>
+                    <p className='about-direct text-glitch'>[ GET&nbsp;TO&nbsp;KNOW&nbsp;US&nbsp;
+                        <span className='ui-btn'>
+                            <a href="" className='background-cancel text-decoration-none'>
+                                <span className='btn-span'>MORE</span>
+                            </a>
+                        </span> ]
+                    </p>
                 </div>
             </div>
             {/* OUR VALUES */}
             <br /><br /><br /><br />
             <div className="center-div rounded-xl">
                 <div className="border-col border-b-2 p-4 col-span-4">
+                    <div className='noise-bg'></div>
                     <p className="label-name text-right">02 // OUR -- VALUES</p>
                 </div>
                 <div className="grid grid-cols-9">

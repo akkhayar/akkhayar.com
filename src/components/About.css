@@ -3,7 +3,9 @@
 .center-div {
     width: 85rem;
     border: solid #BE0000 2px;
-    background-color: #161616;
+    background-color: #232323;
+    position: relative;
+    overflow: hidden;
 }
 
 .border-col {
@@ -28,7 +30,7 @@
     position: absolute;
     width: 4px;
     height: 4px;
-    background-color: grey;
+    background-color: rgb(226, 226, 226);
     border-radius: 50%;
 }
 
@@ -66,6 +68,28 @@
     line-height: normal;
 }
 
+.text-glitch {
+    padding: 1em;
+    line-height: 1;
+    /* text-shadow: 0.06rem 0 0.06rem #9e066b, -0.125rem 0 0.06rem #0e9901; */
+    text-shadow: 0.06rem 0 0.06rem #9e066b, -0.125rem 0 0.06rem #0e9901;
+    /* letter-spacing: 0.125em; */
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes textflicker {
+    from {
+      text-shadow: 1px 0 0 #9e066b, -2px 0 0 #0e9901;
+    }
+    to {
+      text-shadow: 2px 0.5px 2px #9e066b, -1px -0.5px 2px #0e9901;
+    }
+  }
+
 .about-direct {
     color: var(--foreground, #EAEAEA);
     text-align: center;
@@ -74,6 +98,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    overflow: hidden;
 }
 
 .link-underline {
@@ -103,3 +128,201 @@
     font-weight: 400;
     line-height: normal;
 }
+
+/* NOISE */
+
+.noise-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    /* height: 200vh; */
+    overflow: hidden;
+    /* background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0; */
+    background: transparent url('https://www.transparenttextures.com/patterns/otis-redding.png') repeat 0 0;
+    /* background: transparent url('https://www.transparenttextures.com/patterns/3px-tile.png') repeat 0 0; */
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @keyframes bg-animation {
+      0% { transform: translate(0,0) }
+      10% { transform: translate(-5%,-5%) }
+      20% { transform: translate(-10%,5%) }
+      30% { transform: translate(5%,-10%) }
+      40% { transform: translate(-5%,15%) }
+      50% { transform: translate(-10%,5%) }
+      60% { transform: translate(15%,0) }
+      70% { transform: translate(0,10%) }
+      80% { transform: translate(-15%,0) }
+      90% { transform: translate(10%,5%) }
+      100% { transform: translate(5%,0) }
+  
+}
+
+.ui-btn {
+    /* --btn-hover-bg: var(--bg-color); */
+    --btn-transition: 0.05s ease-in;
+    --btn-animation-duration: 1.2s;
+    --font-weight: 600;
+    text-decoration: underline #BE0000;
+    overflow: hidden;
+  }
+  
+  .ui-btn {
+    cursor: crosshair;
+    transition: var(--btn-transition);
+    overflow: hidden;
+  }
+  
+  .ui-btn .btn-span {
+    letter-spacing: var(--btn-letter-spacing);
+    transition: var(--btn-transition);
+    /* box-sizing: border-box; */
+    position: relative;
+    /* background: inherit; */
+    /* background: #F78FB3; */
+    /* background: #ee80d9; */
+    /* background-color: #23232300; */
+    /* color: transparent; */
+    cursor: crosshair;
+    color: #BE0000;
+  }
+  
+  .ui-btn .btn-span::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+  }
+  
+  .ui-btn:hover,
+  .ui-btn:focus {
+    /* background-color: #23232300; */
+    /* background-color: transparent; */
+    /* color: transparent; */
+    cursor: crosshair;
+  }
+  
+  .ui-btn:hover .btn-span,
+  .ui-btn:focus .btn-span {
+    /* color: var(--primary-maroon); */
+    /* color: #F78FB3; */
+    /* color: #ee80d9; */
+    color: #BE0000;
+    background-color: #252525;
+
+  }
+  
+  .ui-btn:hover .btn-span::before,
+  .ui-btn:focus .btn-span::before {
+    animation: chitchat linear both var(--btn-animation-duration);
+  }
+  
+  @keyframes chitchat {
+    0% {
+      content: "#";
+    }
+  
+    5% {
+      content: ".";
+    }
+  
+    10% {
+      content: "^{";
+    }
+  
+    15% {
+      content: "-!";
+    }
+  
+    20% {
+      content: "#$_";
+    }
+  
+    25% {
+      content: "№:0";
+    }
+  
+    30% {
+      content: "#{+.";
+    }
+  
+    35% {
+      content: "@}-?";
+    }
+  
+    40% {
+      content: "?{4@%";
+    }
+  
+    45% {
+      content: "=.,^!";
+    }
+  
+    50% {
+      content: "?2@%";
+    }
+  
+    55% {
+      content: "\;1}]";
+    }
+  
+    60% {
+      content: "?{%:%";
+      right: 0;
+    }
+  
+    65% {
+      content: "|{f[4";
+      right: 0;
+    }
+  
+    70% {
+      content: "{4%0%";
+      right: 0;
+    }
+  
+    75% {
+      content: "'1_0<";
+      right: 0;
+    }
+  
+    80% {
+      content: "{0%";
+      right: 0;
+    }
+  
+    85% {
+      content: "]>'";
+      right: 0;
+    }
+  
+    90% {
+      content: "4";
+      right: 0;
+    }
+  
+    95% {
+      content: "2";
+      right: 0;
+    }
+  
+    100% {
+      content: "";
+      right: 0;
+    }
+  }
+  
+  .background-cancel {
+    background-color: #232323;
+  }
+  
+  .background-cancel:hover {
+    color: transparent;
+    background-color: #232323;
+  }
