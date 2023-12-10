@@ -28,25 +28,45 @@ export default function HandbookContent() {
                 {/* Menu */}
                 <div className='col-span-3'>
                     <div className='border border-color grid grid-rows-12 rounded-xl'>
-                        <div className='border-b border-color row-span-2 hover-invert handbook-menu py-4'>
-                            <ul className='menu-content'>
-                                <li onClick={() => setSelectedMenu('frontend')}>Frontend</li>
-                            </ul>
+                        <div className='border-b border-color grid grid-cols-12 row-span-2 hover-invert handbook-menu py-4'>
+                            <div className='col-span-10 menu-content'>
+                                <ul>
+                                    <li onClick={() => setSelectedMenu('frontend')}>Frontend</li>
+                                </ul>
+                            </div>
+                            <div className='col-span-2'>
+                                <img src="handbook_select.svg" alt="" />
+                            </div>
                         </div>
-                        <div className='border-b border-color row-span-2 hover-invert handbook-menu py-4'>
-                            <ul className='menu-content'>
-                                <li onClick={() => setSelectedMenu('backend')}>Backend</li>
-                            </ul>
+                        <div className='border-b border-color grid grid-cols-12 row-span-2 hover-invert handbook-menu py-4'>
+                            <div className='col-span-10 menu-content'>
+                                <ul>
+                                    <li onClick={() => setSelectedMenu('backend')}>Backend</li>
+                                </ul>
+                            </div>
+                            <div className='col-span-2'>
+                                <img src="handbook_select.svg" alt="" />
+                            </div>
                         </div>
-                        <div className='border-b border-color row-span-2 hover-invert handbook-menu py-4'>
-                            <ul className='menu-content'>
-                                <li onClick={() => setSelectedMenu('design')}>Design</li>
-                            </ul>
+                        <div className='border-b border-color grid grid-cols-12 row-span-2 hover-invert handbook-menu py-4'>
+                            <div className='col-span-10 menu-content'>
+                                <ul>
+                                    <li onClick={() => setSelectedMenu('design')}>Design</li>
+                                </ul>
+                            </div>
+                            <div className='col-span-2'>
+                                <img src="handbook_select.svg" alt="" />
+                            </div>
                         </div>
-                        <div className='border-b border-color row-span-2 hover-invert handbook-menu py-4'>
-                            <ul className='menu-content'>
-                                <li onClick={() => setSelectedMenu('tools')}>Tools</li>
-                            </ul>
+                        <div className='border-b border-color grid grid-cols-12 row-span-2 hover-invert handbook-menu py-4'>
+                            <div className='col-span-10 menu-content'>
+                                <ul>
+                                    <li onClick={() => setSelectedMenu('tools')}>Tools</li>
+                                </ul>
+                            </div>
+                            <div className='col-span-2'>
+                                <img src="handbook_select.svg" alt="" />
+                            </div>
                         </div>
                         <div className='row-span-4 pt-14'>
                             <span className='ps-3'>
