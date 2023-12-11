@@ -22,6 +22,43 @@
 
 }
 
+.handbook-height {
+    height: 20rem;
+}
+
+.handbook-heading {
+    font-family: 'DM Sans', sans-serif;
+    color: #BE0000;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.handbook-content {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.handbook-author {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #b6b6b6;
+}
+
+.handbook-duration {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: #BE0000;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .border-color {
     border-color: #BE0000;
+}
+
+.section-top {
+    padding-top: 5rem;
+    padding-bottom: 8rem;
 }

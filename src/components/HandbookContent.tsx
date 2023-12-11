@@ -10,7 +10,73 @@ export default function HandbookContent() {
     const getContent = () => {
         switch (selectedMenu) {
             case 'frontend':
-                return <div>Frontend Content</div>;
+                return (
+                    <div className='grid grid-cols-12 gap-14 handbook-height'>
+                        <div className='col-span-1 border'>
+                        </div>
+                        <div className='col-span-5 border rounded-xl border-col overflow-hidden'>
+                            <div className='grid grid-rows-12'>
+                                <div className='row-span-1 border-b border-col'>
+                                    <p className='handbook-heading'>CREATE A DOCUMENT</p>
+                                </div>
+                                <div className='row-span-7 border-b border-col'>
+                                    content
+                                </div>
+                                <div className='row-span-4 borders p-[1rem]'>
+                                    <div className='grid grid-rows-12'>
+                                        <div className='row-span-4'>
+                                            <p className='handbook-content'>Documents are groups of pages connected through lorem ipsum ...</p>
+                                        </div>
+                                        <div className='row-span-4 pt-2'>
+                                            <p className='handbook-author'>Pyae Sone Myo</p>
+                                        </div>
+                                        <div className='row-span-4 pt-5'>
+                                            <div className='grid grid-cols-6'>
+                                                <div className='col-span-5'>
+                                                    <p className='handbook-duration'> <u>5 mins</u> </p>
+                                                </div>
+                                                <div className='col-span-1'>
+                                                    &arrow&
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-span-5 border rounded-xl border-col'>
+                            <div className='grid grid-rows-12'>
+                                <div className='row-span-1 border-b border-col'>
+                                    <p className='handbook-heading'>CREATE A DOCUMENT</p>
+                                </div>
+                                <div className='row-span-7 border-b border-col'>
+                                    content
+                                </div>
+                                <div className='row-span-4 borders p-[1rem]'>
+                                    <div className='grid grid-rows-12'>
+                                        <div className='row-span-4'>
+                                            <p className='handbook-content'>Documents are groups of pages connected through lorem ipsum ...</p>
+                                        </div>
+                                        <div className='row-span-4 pt-2'>
+                                            <p className='handbook-author'>Pyae Sone Myo</p>
+                                        </div>
+                                        <div className='row-span-4 pt-5'>
+                                            <div className='grid grid-cols-6'>
+                                                <div className='col-span-5'>
+                                                    <p className='handbook-duration'> <u>5 mins</u> </p>
+                                                </div>
+                                                <div className='col-span-1'>
+                                                    &arrow&
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-span-1 border'></div>
+                    </div>
+                );
             case 'backend':
                 return <div>Backend Content</div>;
             case 'design':
@@ -24,7 +90,7 @@ export default function HandbookContent() {
 
     return (
         <div>
-            <div className='grid grid-cols-12 gap-12'>
+            <div className='section-top grid grid-cols-12 gap-12'>
                 {/* Menu */}
                 <div className='col-span-3'>
                     <div className='border border-color grid grid-rows-12 rounded-xl'>
@@ -75,7 +141,7 @@ export default function HandbookContent() {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-9 border'>
+                <div className='col-span-9'>
                     {/* Display content based on selected menu */}
                     {getContent()}
                 </div>
