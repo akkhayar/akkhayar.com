@@ -12,8 +12,12 @@
     border-color: #BE0000;
 }
 
+.accent-red {
+  color: #BE0000;
+}
+
 .label-name {
-    color: var(--accent, #BE0000);
+    color: var(--accent, #ff0000);
     /* text-align: center; */
     font-size: 2.5rem;
     font-style: normal;
@@ -69,7 +73,6 @@
 }
 
 .text-glitch {
-    padding: 1em;
     line-height: 1;
     /* text-shadow: 0.06rem 0 0.06rem #9e066b, -0.125rem 0 0.06rem #0e9901; */
     text-shadow: 0.06rem 0 0.06rem #9e066b, -0.125rem 0 0.06rem #0e9901;
@@ -120,6 +123,11 @@
     line-height: normal;
 }
 
+.title-size {
+  font-size: 4rem;
+  text-align: right;
+}
+
 .binary {
     color: #F00;
     font-family: Consolas;
@@ -127,6 +135,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* VALUE_VISUAL */
+.img-fix {
+  width: 30rem;
+  /* height: 10rem; */
 }
 
 /* NOISE */
@@ -163,6 +177,8 @@
       100% { transform: translate(5%,0) }
   
 }
+
+/* GLITCHY-BTN */
 
 .ui-btn {
     /* --btn-hover-bg: var(--bg-color); */
